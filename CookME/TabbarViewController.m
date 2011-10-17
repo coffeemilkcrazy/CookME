@@ -48,7 +48,7 @@
     
     NSLog(@"load");    
     
-    UITabBarItem *placeTab = [[UITabBarItem alloc] initWithTitle:@"Menus" image:[UIImage imageNamed:@"179-notepad.png"] tag:0];
+    UITabBarItem *placeTab = [[UITabBarItem alloc] initWithTitle:@"Menus" image:[UIImage imageNamed:@"162-receipt.png"] tag:0];
     UITabBarItem *recentTab = [[UITabBarItem alloc] initWithTitle:@"Search" image:[UIImage imageNamed:@"06-magnify.png"] tag:1];
     UITabBarItem *favTab = [[UITabBarItem alloc] initWithTitle:@"Challenges" image:[UIImage imageNamed:@"140-gradhat.png"] tag:2];
     UITabBarItem *favTab2 = [[UITabBarItem alloc] initWithTitle:@"Favourites" image:[UIImage imageNamed:@"28-star.png"] tag:3];

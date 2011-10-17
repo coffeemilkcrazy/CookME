@@ -41,6 +41,8 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"wood.png"]];
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    self.title = @"Menus";
     // Do any additional setup after loading the view from its nib.
 }
 
