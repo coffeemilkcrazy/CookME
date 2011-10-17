@@ -10,6 +10,8 @@
 
 @implementation GameViewController
 @synthesize managedObjectContext;
+@synthesize tableView;
+
 -(id)initInManagedObjectContext:(NSManagedObjectContext*)context
 {
     self = [super init];

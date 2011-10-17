@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GameViewController : UIViewController
+@interface GameViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 {
     NSManagedObjectContext *managedObjectContext;
+    IBOutlet UITableView *tableView;
 }
 -(id)initInManagedObjectContext:(NSManagedObjectContext*)context;
 @property (retain) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) IBOutlet UITableView *tableView;
 @end
