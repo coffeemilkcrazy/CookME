@@ -43,13 +43,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [super viewDidUnload];
+    
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"wood.png"]];
+    
     NSLog(@"load");    
     
-    UITabBarItem *placeTab = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemTopRated tag:0];
-    UITabBarItem *recentTab = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemRecents tag:1];
-    UITabBarItem *favTab = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFavorites tag:2];
-    UITabBarItem *favTab2 = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFavorites tag:3];
+    UITabBarItem *placeTab = [[UITabBarItem alloc] initWithTitle:@"Menus" image:[UIImage imageNamed:@"179-notepad.png"] tag:0];
+    UITabBarItem *recentTab = [[UITabBarItem alloc] initWithTitle:@"Search" image:[UIImage imageNamed:@"06-magnify.png"] tag:1];
+    UITabBarItem *favTab = [[UITabBarItem alloc] initWithTitle:@"Challenges" image:[UIImage imageNamed:@"140-gradhat.png"] tag:2];
+    UITabBarItem *favTab2 = [[UITabBarItem alloc] initWithTitle:@"Favourites" image:[UIImage imageNamed:@"28-star.png"] tag:3];
 
     
     UINavigationController *menusNVC = [[UINavigationController alloc] init];
@@ -59,19 +61,18 @@
     
     MenuViewController *menuTab = [[MenuViewController alloc] initInManagedObjectContext:self.managedObjectContext];
     menuTab.tabBarItem = placeTab;
-    menuTab.title = @"Menu";
     
     SearchViewController *searchTab = [[SearchViewController alloc] initInManagedObjectContext:self.managedObjectContext];
     searchTab.tabBarItem = recentTab;
-    searchTab.title = @"Search";
+    //searchTab.title = @"Search";
     
     GameViewController *gameTab = [[GameViewController alloc] initInManagedObjectContext:self.managedObjectContext];
     gameTab.tabBarItem = favTab;
-    gameTab.title = @"CookME";
+    //gameTab.title = @"CookME";
     
     FavoriteViewController *favoriteTab = [[FavoriteViewController alloc] initInManagedObjectContext:self.managedObjectContext];
     favoriteTab.tabBarItem = favTab2;
-    favoriteTab.title = @"Favourite";
+    //favoriteTab.title = @"Favourite";
     
     [menusNVC pushViewController:menuTab animated:YES];
     [searchNVC pushViewController:searchTab animated:YES];
@@ -83,7 +84,8 @@
 
 - (void)viewDidUnload
 {
-    }
+    [super viewDidUnload];
+}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
