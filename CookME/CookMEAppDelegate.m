@@ -18,6 +18,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [[UIApplication sharedApplication] setStatusBarStyle: UIStatusBarStyleBlackOpaque];
+    
     TabbarViewController *tabbar = [[TabbarViewController alloc] initInManagedObjectContext:self.managedObjectContext];
     
     [self.window addSubview:tabbar.view];
