@@ -7,6 +7,7 @@
 //
 
 #import "GameViewController.h"
+#import "PlayLevelViewController.h"
 
 @implementation GameViewController
 @synthesize managedObjectContext;
@@ -83,7 +84,7 @@
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 7;
+    return 6;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -96,25 +97,26 @@
     //}
     // Configure the cell...
     
-    UILabel *nameItem = [[UILabel alloc] initWithFrame:CGRectMake(30, 0, 280, 30)];
+    UILabel *nameItem = [[UILabel alloc] initWithFrame:CGRectMake(30, 0-8, 280, 30)];
     nameItem.text = [titleName objectAtIndex:indexPath.row];
     nameItem.font = [UIFont boldSystemFontOfSize:16.0];
     nameItem.backgroundColor = [UIColor clearColor];
     [cell addSubview:nameItem];
     
-    UILabel *detailItem = [[UILabel alloc] initWithFrame:CGRectMake(30, 20, 280, 30)];
+    UILabel *detailItem = [[UILabel alloc] initWithFrame:CGRectMake(30, 20-10, 280, 30)];
     detailItem.text = [detailName objectAtIndex:indexPath.row];
     detailItem.font = [UIFont systemFontOfSize:12.0];
     detailItem.textColor = [UIColor darkGrayColor];
     detailItem.backgroundColor = [UIColor clearColor];
     [cell addSubview:detailItem];
     
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
    // cell.textLabel.text = [titleName objectAtIndex:indexPath.row];
    // cell.detailTextLabel.text = [detailName objectAtIndex:indexPath.row];
     if (indexPath.row == 0)
         cell.contentView.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"master-paper-header.png"]];
-    else if (indexPath.row < 6)
+    else if (indexPath.row < 5)
         cell.contentView.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"master-paper-middle.png"]];
     else
         cell.contentView.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"master-paper-footer.png"]];
@@ -173,6 +175,12 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
+    if (indexPath.row > 0 && indexPath.row < 6) {
+        PlayLevelViewController *levelView = [[PlayLevelViewController alloc] initInManagedObjectContext:self.managedObjectContext andLevel:indexPath.row];
+        levelView.title = [titleName objectAtIndex:indexPath.row];
+        [self.navigationController pushViewController:levelView animated:YES];
+        [levelView release];
+    }
 }
 
 

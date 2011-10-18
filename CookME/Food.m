@@ -25,7 +25,7 @@
                                                    inManagedObjectContext:context];	
     foodDetail.foodname = [foodDetai objectForKey:@"foodname"];
     foodDetail.type = [foodDetai objectForKey:@"type"];
-    foodDetail.level = [NSNumber numberWithInt:[[foodDetai objectForKey:@"foodname"] intValue]];
+    foodDetail.level = [NSNumber numberWithInt:[[foodDetai objectForKey:@"level"] intValue]];
     foodDetail.fav = [NSNumber numberWithBool:NO];
     foodDetail.ingredients = [foodDetai objectForKey:@"ingredients"];
     foodDetail.howto = [foodDetai objectForKey:@"howto"];
