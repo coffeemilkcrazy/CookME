@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		185F184D144D02AA00FAC950 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F184B144D02AA00FAC950 /* SearchViewController.m */; };
-		185F184E144D02AA00FAC950 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185F184C144D02AA00FAC950 /* SearchViewController.xib */; };
 		185F1851144D032D00FAC950 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F1850144D032D00FAC950 /* Food.m */; };
 		185F1855144D034D00FAC950 /* TabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F1853144D034D00FAC950 /* TabbarViewController.m */; };
 		185F1856144D034D00FAC950 /* TabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185F1854144D034D00FAC950 /* TabbarViewController.xib */; };
@@ -58,12 +56,14 @@
 		18E49C4A144CA1CB005C7E8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18E49C48144CA1CB005C7E8C /* InfoPlist.strings */; };
 		18E49C4C144CA1CB005C7E8C /* CookMETests.h in Resources */ = {isa = PBXBuildFile; fileRef = 18E49C4B144CA1CB005C7E8C /* CookMETests.h */; };
 		18E49C4E144CA1CB005C7E8C /* CookMETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E49C4D144CA1CB005C7E8C /* CookMETests.m */; };
+		18F85FBD144D378B00CEE811 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F85FBC144D378B00CEE811 /* libz.1.2.3.dylib */; };
+		18F85FC1144D38CE00CEE811 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F85FBF144D38CE00CEE811 /* SearchViewController.m */; };
+		18F85FC2144D38CE00CEE811 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F85FC0144D38CE00CEE811 /* SearchViewController.xib */; };
 		A0D8B6E7144CFF5200BA118C /* paper-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D8B6E6144CFF5200BA118C /* paper-yellow.png */; };
 		A0D8B704144D1AEF00BA118C /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D8B703144D1AEF00BA118C /* CoreDataTableViewController.m */; };
 		A0D8B708144D1B7A00BA118C /* PlayLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D8B706144D1B7A00BA118C /* PlayLevelViewController.m */; };
 		A0D8B709144D1B7A00BA118C /* PlayLevelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D8B707144D1B7A00BA118C /* PlayLevelViewController.xib */; };
 		A0D8B70B144D26D400BA118C /* frame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D8B70A144D26D300BA118C /* frame@2x.png */; };
-		A0D8B711144D327E00BA118C /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D8B710144D327E00BA118C /* libz.1.2.5.dylib */; };
 		A0EFE258144CAFA600321CFB /* 06-magnify.png in Resources */ = {isa = PBXBuildFile; fileRef = A0EFE256144CAFA600321CFB /* 06-magnify.png */; };
 		A0EFE259144CAFA600321CFB /* 06-magnify@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0EFE257144CAFA600321CFB /* 06-magnify@2x.png */; };
 		A0EFE25D144CAFBA00321CFB /* 28-star.png in Resources */ = {isa = PBXBuildFile; fileRef = A0EFE25B144CAFBA00321CFB /* 28-star.png */; };
@@ -89,9 +89,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		185F184A144D02AA00FAC950 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
-		185F184B144D02AA00FAC950 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
-		185F184C144D02AA00FAC950 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		185F184F144D032D00FAC950 /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
 		185F1850144D032D00FAC950 /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Food.m; sourceTree = "<group>"; };
 		185F1852144D034D00FAC950 /* TabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarViewController.h; sourceTree = "<group>"; };
@@ -169,6 +166,10 @@
 		18E49C49144CA1CB005C7E8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18E49C4B144CA1CB005C7E8C /* CookMETests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CookMETests.h; sourceTree = "<group>"; };
 		18E49C4D144CA1CB005C7E8C /* CookMETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CookMETests.m; sourceTree = "<group>"; };
+		18F85FBC144D378B00CEE811 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+		18F85FBE144D38CE00CEE811 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		18F85FBF144D38CE00CEE811 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		18F85FC0144D38CE00CEE811 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		A0D8B6E6144CFF5200BA118C /* paper-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paper-yellow.png"; sourceTree = "<group>"; };
 		A0D8B702144D1AEF00BA118C /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
 		A0D8B703144D1AEF00BA118C /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
@@ -176,7 +177,6 @@
 		A0D8B706144D1B7A00BA118C /* PlayLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayLevelViewController.m; sourceTree = "<group>"; };
 		A0D8B707144D1B7A00BA118C /* PlayLevelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayLevelViewController.xib; sourceTree = "<group>"; };
 		A0D8B70A144D26D300BA118C /* frame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "frame@2x.png"; sourceTree = "<group>"; };
-		A0D8B710144D327E00BA118C /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		A0EFE256144CAFA600321CFB /* 06-magnify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "06-magnify.png"; sourceTree = "<group>"; };
 		A0EFE257144CAFA600321CFB /* 06-magnify@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "06-magnify@2x.png"; sourceTree = "<group>"; };
 		A0EFE25B144CAFBA00321CFB /* 28-star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "28-star.png"; sourceTree = "<group>"; };
@@ -196,7 +196,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0D8B711144D327E00BA118C /* libz.1.2.5.dylib in Frameworks */,
+				18F85FBD144D378B00CEE811 /* libz.1.2.3.dylib in Frameworks */,
 				185F1898144D041700FAC950 /* SystemConfiguration.framework in Frameworks */,
 				185F1896144D03F900FAC950 /* libxml2.2.dylib in Frameworks */,
 				18E49C22144CA1CA005C7E8C /* CoreGraphics.framework in Frameworks */,
@@ -246,9 +246,9 @@
 		1813F666144CA36500014EF6 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				185F184A144D02AA00FAC950 /* SearchViewController.h */,
-				185F184B144D02AA00FAC950 /* SearchViewController.m */,
-				185F184C144D02AA00FAC950 /* SearchViewController.xib */,
+				18F85FBE144D38CE00CEE811 /* SearchViewController.h */,
+				18F85FBF144D38CE00CEE811 /* SearchViewController.m */,
+				18F85FC0144D38CE00CEE811 /* SearchViewController.xib */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -349,7 +349,7 @@
 		18E49C0E144CA1CA005C7E8C = {
 			isa = PBXGroup;
 			children = (
-				A0D8B710144D327E00BA118C /* libz.1.2.5.dylib */,
+				18F85FBC144D378B00CEE811 /* libz.1.2.3.dylib */,
 				18E49C25144CA1CA005C7E8C /* CookME */,
 				18E49C45144CA1CB005C7E8C /* CookMETests */,
 				18E49C1C144CA1CA005C7E8C /* Frameworks */,
@@ -526,7 +526,6 @@
 				A0EFE26D144CB73D00321CFB /* wood.png in Resources */,
 				A0EFE26E144CB73D00321CFB /* wood@2x.png in Resources */,
 				A0D8B6E7144CFF5200BA118C /* paper-yellow.png in Resources */,
-				185F184E144D02AA00FAC950 /* SearchViewController.xib in Resources */,
 				185F1856144D034D00FAC950 /* TabbarViewController.xib in Resources */,
 				185F18A4144D0D4700FAC950 /* master-paper-middle@2x.png in Resources */,
 				185F18A5144D0D4700FAC950 /* master-paper-header@2x.png in Resources */,
@@ -534,6 +533,7 @@
 				185F18AC144D0DDD00FAC950 /* Config.plist in Resources */,
 				A0D8B709144D1B7A00BA118C /* PlayLevelViewController.xib in Resources */,
 				A0D8B70B144D26D400BA118C /* frame@2x.png in Resources */,
+				18F85FC2144D38CE00CEE811 /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,7 +575,6 @@
 				186BE2E7144CA77C00FC8C0C /* MenuViewController.m in Sources */,
 				186BE2F1144CAA6D00FC8C0C /* GameViewController.m in Sources */,
 				186BE2FB144CAA9E00FC8C0C /* FavoriteViewController.m in Sources */,
-				185F184D144D02AA00FAC950 /* SearchViewController.m in Sources */,
 				185F1851144D032D00FAC950 /* Food.m in Sources */,
 				185F1855144D034D00FAC950 /* TabbarViewController.m in Sources */,
 				185F1870144D038D00FAC950 /* ASIAuthenticationDialog.m in Sources */,
@@ -595,6 +594,7 @@
 				185F188F144D03B800FAC950 /* CXMLNode_XPathExtensions.m in Sources */,
 				A0D8B704144D1AEF00BA118C /* CoreDataTableViewController.m in Sources */,
 				A0D8B708144D1B7A00BA118C /* PlayLevelViewController.m in Sources */,
+				18F85FC1144D38CE00CEE811 /* SearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
