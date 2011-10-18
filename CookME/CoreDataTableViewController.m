@@ -134,7 +134,7 @@
     
     
     UIImageView *pictureView = [[UIImageView alloc] initWithImage:[UIImage imageWithData:[managedObject valueForKey:@"picture"]]];
-    pictureView.frame = CGRectMake(20, 30, 261, 175);
+    pictureView.frame = CGRectMake(35, 28, 249, 192);
     
     [cell addSubview:pictureView];
     

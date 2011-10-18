@@ -27,7 +27,6 @@
         self.fetchedResultsController  = frc;
         self.titleKey = @"foodname";
         self.subtitleKey = @"tag";
-        self.imageData = @"picture";
         self.searchKey = @"tag";
         
     }
@@ -71,5 +70,16 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+- (void)managedObjectSelected:(NSManagedObject *)managedObject
+{
+//	Photo *photo = (Photo *)managedObject;
+//    
+//    PhotoViewController *photoViewController = [[PhotoViewController alloc] init];
+//    photoViewController.photo = photo;
+//    [self.navigationController pushViewController:photoViewController animated:YES];
+//    [photoViewController release];
+}
+
 
 @end

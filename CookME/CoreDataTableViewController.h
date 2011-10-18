@@ -14,7 +14,6 @@
 	NSString *titleKey;
 	NSString *subtitleKey;
 	NSString *searchKey;
-    NSData *imageData;
     
 	NSFetchedResultsController *fetchedResultsController;
 }
