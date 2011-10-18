@@ -12,6 +12,8 @@
 {
     NSManagedObjectContext *managedObjectContext;
     IBOutlet UITableView *tableView;
+    NSMutableArray *titleName;
+    NSMutableArray *detailName;
 }
 -(id)initInManagedObjectContext:(NSManagedObjectContext*)context;
 @property (retain) NSManagedObjectContext *managedObjectContext;

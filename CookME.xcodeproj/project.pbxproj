@@ -34,6 +34,9 @@
 		18E49C4A144CA1CB005C7E8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18E49C48144CA1CB005C7E8C /* InfoPlist.strings */; };
 		18E49C4C144CA1CB005C7E8C /* CookMETests.h in Resources */ = {isa = PBXBuildFile; fileRef = 18E49C4B144CA1CB005C7E8C /* CookMETests.h */; };
 		18E49C4E144CA1CB005C7E8C /* CookMETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E49C4D144CA1CB005C7E8C /* CookMETests.m */; };
+		A0D8B6E2144CD75600BA118C /* cell-paper.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D8B6E1144CD75600BA118C /* cell-paper.png */; };
+		A0D8B6E5144CD82E00BA118C /* cell-paperfull.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D8B6E4144CD82E00BA118C /* cell-paperfull.png */; };
+		A0D8B6E7144CFF5200BA118C /* paper-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D8B6E6144CFF5200BA118C /* paper-yellow.png */; };
 		A0EFE258144CAFA600321CFB /* 06-magnify.png in Resources */ = {isa = PBXBuildFile; fileRef = A0EFE256144CAFA600321CFB /* 06-magnify.png */; };
 		A0EFE259144CAFA600321CFB /* 06-magnify@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0EFE257144CAFA600321CFB /* 06-magnify@2x.png */; };
 		A0EFE25D144CAFBA00321CFB /* 28-star.png in Resources */ = {isa = PBXBuildFile; fileRef = A0EFE25B144CAFBA00321CFB /* 28-star.png */; };
@@ -93,6 +96,9 @@
 		18E49C49144CA1CB005C7E8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18E49C4B144CA1CB005C7E8C /* CookMETests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CookMETests.h; sourceTree = "<group>"; };
 		18E49C4D144CA1CB005C7E8C /* CookMETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CookMETests.m; sourceTree = "<group>"; };
+		A0D8B6E1144CD75600BA118C /* cell-paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell-paper.png"; sourceTree = "<group>"; };
+		A0D8B6E4144CD82E00BA118C /* cell-paperfull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell-paperfull.png"; sourceTree = "<group>"; };
+		A0D8B6E6144CFF5200BA118C /* paper-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paper-yellow.png"; sourceTree = "<group>"; };
 		A0EFE256144CAFA600321CFB /* 06-magnify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "06-magnify.png"; sourceTree = "<group>"; };
 		A0EFE257144CAFA600321CFB /* 06-magnify@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "06-magnify@2x.png"; sourceTree = "<group>"; };
 		A0EFE25B144CAFBA00321CFB /* 28-star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "28-star.png"; sourceTree = "<group>"; };
@@ -167,6 +173,8 @@
 		1813F66C144CA39600014EF6 /* game */ = {
 			isa = PBXGroup;
 			children = (
+				A0D8B6E1144CD75600BA118C /* cell-paper.png */,
+				A0D8B6E4144CD82E00BA118C /* cell-paperfull.png */,
 				186BE2EE144CAA6D00FC8C0C /* GameViewController.h */,
 				186BE2EF144CAA6D00FC8C0C /* GameViewController.m */,
 				186BE2F0144CAA6D00FC8C0C /* GameViewController.xib */,
@@ -220,6 +228,7 @@
 				1813F66D144CA45F00014EF6 /* TabbarViewController.h */,
 				1813F66E144CA45F00014EF6 /* TabbarViewController.m */,
 				1813F66F144CA45F00014EF6 /* TabbarViewController.xib */,
+				A0D8B6E6144CFF5200BA118C /* paper-yellow.png */,
 				A0EFE256144CAFA600321CFB /* 06-magnify.png */,
 				A0EFE257144CAFA600321CFB /* 06-magnify@2x.png */,
 				A0EFE25B144CAFBA00321CFB /* 28-star.png */,
@@ -352,6 +361,9 @@
 				A0EFE26A144CB16900321CFB /* 179-notepad@2x.png in Resources */,
 				A0EFE26D144CB73D00321CFB /* wood.png in Resources */,
 				A0EFE26E144CB73D00321CFB /* wood@2x.png in Resources */,
+				A0D8B6E2144CD75600BA118C /* cell-paper.png in Resources */,
+				A0D8B6E5144CD82E00BA118C /* cell-paperfull.png in Resources */,
+				A0D8B6E7144CFF5200BA118C /* paper-yellow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
