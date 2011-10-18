@@ -29,7 +29,7 @@
 // key to use when searching the table (should usually be the same as displayKey); if nil, no searching allowed
 @property (copy) NSString *searchKey;
 // key to use when searching the table (should usually be the same as displayKey); if nil, no searching allowed
-@property (copy) NSString *imageData;
+@property (copy) NSData *imageData;
 
 // gets accessory type (e.g. disclosure indicator) for the given managedObject (default DisclosureIndicator)
 - (UITableViewCellAccessoryType)accessoryTypeForManagedObject:(NSManagedObject *)managedObject;

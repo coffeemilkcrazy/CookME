@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		184C8A08144D315000366CF2 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 184C8A07144D315000366CF2 /* libz.1.2.3.dylib */; };
 		185F184D144D02AA00FAC950 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F184B144D02AA00FAC950 /* SearchViewController.m */; };
 		185F184E144D02AA00FAC950 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185F184C144D02AA00FAC950 /* SearchViewController.xib */; };
 		185F1851144D032D00FAC950 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F1850144D032D00FAC950 /* Food.m */; };
@@ -64,6 +63,7 @@
 		A0D8B708144D1B7A00BA118C /* PlayLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D8B706144D1B7A00BA118C /* PlayLevelViewController.m */; };
 		A0D8B709144D1B7A00BA118C /* PlayLevelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D8B707144D1B7A00BA118C /* PlayLevelViewController.xib */; };
 		A0D8B70B144D26D400BA118C /* frame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D8B70A144D26D300BA118C /* frame@2x.png */; };
+		A0D8B711144D327E00BA118C /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D8B710144D327E00BA118C /* libz.1.2.5.dylib */; };
 		A0EFE258144CAFA600321CFB /* 06-magnify.png in Resources */ = {isa = PBXBuildFile; fileRef = A0EFE256144CAFA600321CFB /* 06-magnify.png */; };
 		A0EFE259144CAFA600321CFB /* 06-magnify@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0EFE257144CAFA600321CFB /* 06-magnify@2x.png */; };
 		A0EFE25D144CAFBA00321CFB /* 28-star.png in Resources */ = {isa = PBXBuildFile; fileRef = A0EFE25B144CAFBA00321CFB /* 28-star.png */; };
@@ -89,7 +89,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		184C8A07144D315000366CF2 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
 		185F184A144D02AA00FAC950 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		185F184B144D02AA00FAC950 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		185F184C144D02AA00FAC950 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
@@ -177,6 +176,7 @@
 		A0D8B706144D1B7A00BA118C /* PlayLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayLevelViewController.m; sourceTree = "<group>"; };
 		A0D8B707144D1B7A00BA118C /* PlayLevelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayLevelViewController.xib; sourceTree = "<group>"; };
 		A0D8B70A144D26D300BA118C /* frame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "frame@2x.png"; sourceTree = "<group>"; };
+		A0D8B710144D327E00BA118C /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		A0EFE256144CAFA600321CFB /* 06-magnify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "06-magnify.png"; sourceTree = "<group>"; };
 		A0EFE257144CAFA600321CFB /* 06-magnify@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "06-magnify@2x.png"; sourceTree = "<group>"; };
 		A0EFE25B144CAFBA00321CFB /* 28-star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "28-star.png"; sourceTree = "<group>"; };
@@ -196,7 +196,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				184C8A08144D315000366CF2 /* libz.1.2.3.dylib in Frameworks */,
+				A0D8B711144D327E00BA118C /* libz.1.2.5.dylib in Frameworks */,
 				185F1898144D041700FAC950 /* SystemConfiguration.framework in Frameworks */,
 				185F1896144D03F900FAC950 /* libxml2.2.dylib in Frameworks */,
 				18E49C22144CA1CA005C7E8C /* CoreGraphics.framework in Frameworks */,
@@ -349,7 +349,7 @@
 		18E49C0E144CA1CA005C7E8C = {
 			isa = PBXGroup;
 			children = (
-				184C8A07144D315000366CF2 /* libz.1.2.3.dylib */,
+				A0D8B710144D327E00BA118C /* libz.1.2.5.dylib */,
 				18E49C25144CA1CA005C7E8C /* CookME */,
 				18E49C45144CA1CB005C7E8C /* CookMETests */,
 				18E49C1C144CA1CA005C7E8C /* Frameworks */,

@@ -43,6 +43,9 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             foodDetail.picture = imgeData;
             NSLog(@"DONE");
+            
+            NSError *error;
+           [context save:&error];
         });
         //            [imgCover release];
     });

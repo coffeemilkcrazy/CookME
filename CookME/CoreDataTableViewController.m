@@ -129,6 +129,14 @@
     imageFrame.frame = CGRectMake(0, 0, 320, 250);
     
     [cell addSubview:imageFrame];
+    //NSLog(@"%@", self.imageData);
+    
+    
+    
+    UIImageView *pictureView = [[UIImageView alloc] initWithImage:[UIImage imageWithData:[managedObject valueForKey:@"picture"]]];
+    pictureView.frame = CGRectMake(20, 30, 261, 175);
+    
+    [cell addSubview:pictureView];
     
     UILabel *detailName = [[UILabel alloc] initWithFrame:CGRectMake(18, 180+30, ((([[managedObject valueForKey:self.titleKey] length]*5)+50)*0.9), 20)];
     detailName.backgroundColor = [UIColor whiteColor];
