@@ -27,6 +27,7 @@
         self.fetchedResultsController  = frc;
         self.titleKey = @"foodname";
         self.subtitleKey = @"tag";
+        self.imageData = @"picture";
         self.searchKey = @"tag";
         
     }

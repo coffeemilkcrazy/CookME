@@ -9,7 +9,7 @@
 @implementation CoreDataTableViewController
 
 @synthesize fetchedResultsController;
-@synthesize titleKey, subtitleKey, searchKey;
+@synthesize titleKey, subtitleKey, searchKey, imageData;
 
 - (void)createSearchBar
 {
@@ -149,7 +149,7 @@
     
     [cell addSubview:titleName];
 	
-    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
 //	if (self.titleKey) cell.textLabel.text = 
 //	if (self.subtitleKey) cell.detailTextLabel.text = [managedObject valueForKey:self.subtitleKey];
