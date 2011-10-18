@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="562" systemVersion="10K549" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Food">
+        <attribute name="fav" optional="YES" attributeType="Boolean"/>
         <attribute name="foodname" optional="YES" attributeType="String"/>
         <attribute name="howto" optional="YES" attributeType="String"/>
         <attribute name="ingredients" optional="YES" attributeType="String"/>
         <attribute name="level" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
         <attribute name="picture" optional="YES" attributeType="Transformable"/>
+        <attribute name="tag" optional="YES" attributeType="String"/>
         <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Food" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="Food" positionX="160" positionY="192" width="128" height="165"/>
     </elements>
 </model>

@@ -11,9 +11,16 @@
 #import "SearchViewController.h"
 #import "GameViewController.h"
 #import "FavoriteViewController.h"
+
+#import "ASIFormDataRequest.h"
+#import "TouchXML.h"
+
+#import "Food.h"
+
+#import "CookMEAppDelegate.h"
 @interface TabbarViewController : UITabBarController
 {
-    
+    NSString *urlHost;
 }
 @property (retain) NSManagedObjectContext *managedObjectContext;
 -(id)initInManagedObjectContext:(NSManagedObjectContext*)context;

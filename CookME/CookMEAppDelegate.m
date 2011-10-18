@@ -27,6 +27,10 @@
     [self.window makeKeyAndVisible];
     return YES;
 }
++ (CookMEAppDelegate *)sharedAppDelegate {
+    
+    return (CookMEAppDelegate*) [[UIApplication sharedApplication] delegate];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
