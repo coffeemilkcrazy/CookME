@@ -50,48 +50,6 @@
     
     // Release any cached data, images, etc that aren't in use.
 }
-//#pragma mark - Table view data source
-//
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-//{
-//#warning Potentially incomplete method implementation.
-//    // Return the number of sections.
-//    return 0;
-//}
-//
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-//{
-//#warning Incomplete method implementation.
-//    // Return the number of rows in the section.
-//    return 0;
-//}
-//
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    static NSString *CellIdentifier = @"Cell";
-//    
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-//    if (cell == nil) {
-//        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-//    }
-//        
-//    return cell;
-//}
-//
-//#pragma mark - Table view delegate
-//
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    // Navigation logic may go here. Create and push another view controller.
-//    /*
-//     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-//     // ...
-//     // Pass the selected object to the new view controller.
-//     [self.navigationController pushViewController:detailViewController animated:YES];
-//     [detailViewController release];
-//     */
-//}
-
 - (void)createSearchBar
 {
     
@@ -106,6 +64,7 @@
 			searchBar.frame = CGRectMake(0, 0, 0, 38);
             searchBar.barStyle = UIBarStyleBlack;
 			self.tableView.tableHeaderView = searchBar;
+            self.tableView.contentOffset = CGPointMake(0.0, 38);
 		}
 	} 
     else 
@@ -180,8 +139,10 @@
 	fetchedResultsController = [controller retain];
 	controller.delegate = self;
 	normalPredicate = [self.fetchedResultsController.fetchRequest.predicate retain];
-	if (!self.title) self.title = controller.fetchRequest.entity.name;
-	if (self.view.window) [self performFetchForTableView:self.tableView];
+//	if (!self.title) self.title = controller.fetchRequest.entity.name;
+//	if (self.view.window) [self performFetchForTableView:self.tableView];
+//    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+
 }
 
 - (UITableViewCellAccessoryType)accessoryTypeForManagedObject:(NSManagedObject *)managedObject
@@ -260,10 +221,12 @@
 
 - (void)viewDidLoad
 {
-	[self createSearchBar];
     [super viewDidLoad];
+    [self createSearchBar];
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"wood.png"]];
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    self.title = @"Search";
+
     self.tableView.backgroundColor = [UIColor clearColor];
 
 }
@@ -374,22 +337,6 @@
 }
 
 
-//#pragma mark - View lifecycle
-//- (void) viewWillAppear:(BOOL)animated
-//{
-// 
-//
-//}
-//
-//- (void)viewDidLoad
-//{
-//    [super viewDidLoad];
-//    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"wood.png"]];
-//    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
-////    self.title = @"Search";
-//    
-//    
-//}
 
 - (void)viewDidUnload
 {

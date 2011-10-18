@@ -32,6 +32,10 @@
 		185F1896144D03F900FAC950 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 185F1895144D03F900FAC950 /* libxml2.2.dylib */; };
 		185F1898144D041700FAC950 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185F1897144D041700FAC950 /* SystemConfiguration.framework */; };
 		185F189A144D047200FAC950 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 185F1899144D047200FAC950 /* libz.1.2.3.dylib */; };
+		185F18A4144D0D4700FAC950 /* master-paper-middle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185F18A1144D0D4700FAC950 /* master-paper-middle@2x.png */; };
+		185F18A5144D0D4700FAC950 /* master-paper-header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185F18A2144D0D4700FAC950 /* master-paper-header@2x.png */; };
+		185F18A6144D0D4700FAC950 /* master-paper-footer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185F18A3144D0D4700FAC950 /* master-paper-footer@2x.png */; };
+		185F18AC144D0DDD00FAC950 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 185F18AB144D0DDD00FAC950 /* Config.plist */; };
 		186BE2E7144CA77C00FC8C0C /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186BE2E5144CA77C00FC8C0C /* MenuViewController.m */; };
 		186BE2E8144CA77C00FC8C0C /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186BE2E6144CA77C00FC8C0C /* MenuViewController.xib */; };
 		186BE2F1144CAA6D00FC8C0C /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186BE2EF144CAA6D00FC8C0C /* GameViewController.m */; };
@@ -132,6 +136,10 @@
 		185F1895144D03F900FAC950 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		185F1897144D041700FAC950 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		185F1899144D047200FAC950 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+		185F18A1144D0D4700FAC950 /* master-paper-middle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "master-paper-middle@2x.png"; sourceTree = "<group>"; };
+		185F18A2144D0D4700FAC950 /* master-paper-header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "master-paper-header@2x.png"; sourceTree = "<group>"; };
+		185F18A3144D0D4700FAC950 /* master-paper-footer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "master-paper-footer@2x.png"; sourceTree = "<group>"; };
+		185F18AB144D0DDD00FAC950 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		186BE2E4144CA77C00FC8C0C /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		186BE2E5144CA77C00FC8C0C /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		186BE2E6144CA77C00FC8C0C /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
@@ -308,15 +316,32 @@
 			name = TouchXML;
 			sourceTree = "<group>";
 		};
+		185F189F144D0D3400FAC950 /* IMG */ = {
+			isa = PBXGroup;
+			children = (
+				185F18A1144D0D4700FAC950 /* master-paper-middle@2x.png */,
+				185F18A2144D0D4700FAC950 /* master-paper-header@2x.png */,
+				185F18A3144D0D4700FAC950 /* master-paper-footer@2x.png */,
+				A0D8B6E6144CFF5200BA118C /* paper-yellow.png */,
+				A0EFE256144CAFA600321CFB /* 06-magnify.png */,
+				A0EFE257144CAFA600321CFB /* 06-magnify@2x.png */,
+				A0EFE25B144CAFBA00321CFB /* 28-star.png */,
+				A0EFE25C144CAFBA00321CFB /* 28-star@2x.png */,
+				A0EFE25F144CAFF000321CFB /* 140-gradhat.png */,
+				A0EFE260144CAFF000321CFB /* 140-gradhat@2x.png */,
+				A0EFE263144CB01600321CFB /* 162-receipt.png */,
+				A0EFE264144CB01600321CFB /* 162-receipt@2x.png */,
+				A0EFE267144CB16800321CFB /* 179-notepad.png */,
+				A0EFE268144CB16800321CFB /* 179-notepad@2x.png */,
+				A0EFE26B144CB73D00321CFB /* wood.png */,
+				A0EFE26C144CB73D00321CFB /* wood@2x.png */,
+			);
+			name = IMG;
+			sourceTree = "<group>";
+		};
 		18E49C0E144CA1CA005C7E8C = {
 			isa = PBXGroup;
 			children = (
-				185F1899144D047200FAC950 /* libz.1.2.3.dylib */,
-				185F1897144D041700FAC950 /* SystemConfiguration.framework */,
-				185F1895144D03F900FAC950 /* libxml2.2.dylib */,
-				185F1894144D03EB00FAC950 /* CoreGraphics.framework */,
-				185F1892144D03E400FAC950 /* MobileCoreServices.framework */,
-				185F1890144D03E000FAC950 /* CFNetwork.framework */,
 				18E49C25144CA1CA005C7E8C /* CookME */,
 				18E49C45144CA1CB005C7E8C /* CookMETests */,
 				18E49C1C144CA1CA005C7E8C /* Frameworks */,
@@ -336,6 +361,12 @@
 		18E49C1C144CA1CA005C7E8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				185F1899144D047200FAC950 /* libz.1.2.3.dylib */,
+				185F1897144D041700FAC950 /* SystemConfiguration.framework */,
+				185F1895144D03F900FAC950 /* libxml2.2.dylib */,
+				185F1894144D03EB00FAC950 /* CoreGraphics.framework */,
+				185F1892144D03E400FAC950 /* MobileCoreServices.framework */,
+				185F1890144D03E000FAC950 /* CFNetwork.framework */,
 				18E49C1D144CA1CA005C7E8C /* UIKit.framework */,
 				18E49C1F144CA1CA005C7E8C /* Foundation.framework */,
 				18E49C21144CA1CA005C7E8C /* CoreGraphics.framework */,
@@ -348,6 +379,7 @@
 		18E49C25144CA1CA005C7E8C /* CookME */ = {
 			isa = PBXGroup;
 			children = (
+				185F18AB144D0DDD00FAC950 /* Config.plist */,
 				185F187C144D03AB00FAC950 /* TouchXML */,
 				185F1857144D037800FAC950 /* ASI */,
 				1813F665144CA35C00014EF6 /* Cook */,
@@ -364,19 +396,7 @@
 				185F184F144D032D00FAC950 /* Food.h */,
 				185F1850144D032D00FAC950 /* Food.m */,
 				18E49C26144CA1CA005C7E8C /* Supporting Files */,
-				A0D8B6E6144CFF5200BA118C /* paper-yellow.png */,
-				A0EFE256144CAFA600321CFB /* 06-magnify.png */,
-				A0EFE257144CAFA600321CFB /* 06-magnify@2x.png */,
-				A0EFE25B144CAFBA00321CFB /* 28-star.png */,
-				A0EFE25C144CAFBA00321CFB /* 28-star@2x.png */,
-				A0EFE25F144CAFF000321CFB /* 140-gradhat.png */,
-				A0EFE260144CAFF000321CFB /* 140-gradhat@2x.png */,
-				A0EFE263144CB01600321CFB /* 162-receipt.png */,
-				A0EFE264144CB01600321CFB /* 162-receipt@2x.png */,
-				A0EFE267144CB16800321CFB /* 179-notepad.png */,
-				A0EFE268144CB16800321CFB /* 179-notepad@2x.png */,
-				A0EFE26B144CB73D00321CFB /* wood.png */,
-				A0EFE26C144CB73D00321CFB /* wood@2x.png */,
+				185F189F144D0D3400FAC950 /* IMG */,
 			);
 			path = CookME;
 			sourceTree = "<group>";
@@ -500,6 +520,10 @@
 				A0D8B6E7144CFF5200BA118C /* paper-yellow.png in Resources */,
 				185F184E144D02AA00FAC950 /* SearchViewController.xib in Resources */,
 				185F1856144D034D00FAC950 /* TabbarViewController.xib in Resources */,
+				185F18A4144D0D4700FAC950 /* master-paper-middle@2x.png in Resources */,
+				185F18A5144D0D4700FAC950 /* master-paper-header@2x.png in Resources */,
+				185F18A6144D0D4700FAC950 /* master-paper-footer@2x.png in Resources */,
+				185F18AC144D0DDD00FAC950 /* Config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
